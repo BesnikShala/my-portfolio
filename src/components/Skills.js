@@ -1,5 +1,11 @@
 import Carousel from 'react-multi-carousel';
+import { Container, Row, Col } from "react-bootstrap";
 import 'react-multi-carousel/lib/styles.css';
+import meter1 from "../assets/images/meter1.svg";
+import meter2 from "../assets/images/meter2.svg";
+import meter3 from "../assets/images/meter3.svg";
+import meter4 from "../assets/images/meter4.svg";
+import colorSharp from "../assets/images/color-sharp.png"
 
 export const Skills = () => {
     const responsive = {
@@ -20,6 +26,38 @@ export const Skills = () => {
           breakpoint: { max: 464, min: 0 },
           items: 1
         }
-      };
+    };
 
+    return (
+        <section className='skill' id="skills">
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="skill-box">
+                            <h2>Skills</h2>
+                            <p>Lorem Ipsum Text Lorem Ipsum Text Lorem Ipsum Text Lorem Ipsum Text</p>
+                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                                <div className='item'>
+                                    <img src={meter1} alt="meter image" />
+                                    <h5>Web Development</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter2} alt="meter image" />
+                                    <h5>Web Development</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter3} alt="meter image" />
+                                    <h5>Web Development</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter4} alt="meter image" />
+                                    <h5>Web Development</h5>
+                                </div>
+                            </Carousel>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+    )
 }
