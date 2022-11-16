@@ -30,7 +30,7 @@ export const NavBar = () => {
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-      <Container>
+      <Container className="container-fluid">
         <Navbar.Brand href="#home">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
