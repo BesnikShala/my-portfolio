@@ -85,7 +85,7 @@ export const Contact = () => {
                     onChange={ (e) => onFormUpdate('phone', e.target.value) }
                   />
                 </Col>
-                <Col md={6} className="px-1">
+                <Col md={12} className="px-1">
                   <textarea
                     type="text"
                     row="6"

@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
+import { HashLink } from 'react-router-hash-link';
 import {
   TiSocialLinkedinCircular,
   TiSocialGithubCircular,
 } from "react-icons/ti";
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -29,6 +33,7 @@ export const NavBar = () => {
   };
 
   return (
+    <Router>
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container className="container-fluid">
         <Navbar.Brand href="#home">
@@ -58,9 +63,9 @@ export const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#project"
               className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+                activeLink === "project" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
@@ -79,12 +84,15 @@ export const NavBar = () => {
                 <TiSocialGithubCircular style={{ color: "white" }} />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
-            </button>
+            <HashLink to='#connect'>
+              <button className="vvd" onClick={() => console.log("connect")}>
+                <span>Let's Connect</span>
+              </button>
+            </HashLink>
           </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </Router>
   );
 };

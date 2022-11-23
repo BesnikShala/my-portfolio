@@ -29,7 +29,7 @@ export const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>Here you can see my project portfolio of my work</p>
-            <Tab.Container id="projects-tabs" defaultActiveKey="/home">
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
                 className="nav-pills mb-5 justify-content-center align-items-center"
