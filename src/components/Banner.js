@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import profileImg from "../assets/images/profile.jpeg";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -72,8 +73,8 @@ export const Banner = () => {
               </HashLink>
             </Router>
           </Col>
-          <Col sm={12} md={6} xl={5}>
-            <img alt="header image"></img>
+          <Col sm={12} md={6} xl={5} className="profile-img">
+            <img src={profileImg} alt="header image" />
           </Col>
         </Row>
       </Container>

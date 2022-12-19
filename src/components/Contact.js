@@ -50,7 +50,7 @@ export const Contact = () => {
             <img src={contactImg} alt="Contact us" />
           </Col>
           <Col>
-            <h2>Get In Touch</h2>
+            <h2 className="text-white">Get In Touch</h2>
             <form onSubmit={handleSubmit}>
               <Row>
                 <Col md={6} className="px-1">

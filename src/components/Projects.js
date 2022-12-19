@@ -22,6 +22,17 @@ export const Projects = () => {
     },
   ];
 
+  const project2 = [
+    {
+      title: "Founder Property Ltd",
+      description:
+        "My first real world project for a local construction company. Site built using Python and Django Framework",
+      imgUrl: projectImg2,
+      siteUrl: "https://www.founderproperty.co.uk/",
+    },
+  ];
+
+
   return (
     <section className="project" id="project">
       <Container>
@@ -59,7 +70,16 @@ export const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-
+                <Row>
+                    {project2.map((project, index) => {
+                      return (
+                        <ProjectCard
+                        key={index}
+                        {...project}
+                        />
+                      )
+                    })}
+                  </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
 
@@ -69,7 +89,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      {/* <img className="background-image-right" src={colorSharp2}></img> */}
     </section>
   );
 };
