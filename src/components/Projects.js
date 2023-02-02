@@ -3,6 +3,8 @@ import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/images/color-sharp2.png";
 import projectImg1 from "../assets/images/projectImg1.jpeg";
 import projectImg2 from "../assets/images/projectImg2.jpeg";
+import recipiy from '../assets/images/recipiy.jpeg';
+import lothailand from '../assets/images/lothailand.jpeg';
 
 export const Projects = () => {
   const projects = [
@@ -24,11 +26,18 @@ export const Projects = () => {
 
   const project2 = [
     {
-      title: "Founder Property Ltd",
+      title: "Recipiy",
       description:
-        "My first real world project for a local construction company. Site built using Python and Django Framework",
-      imgUrl: projectImg2,
-      siteUrl: "https://www.founderproperty.co.uk/",
+        "Recipe sharing site. Made with Python and Flask, database created with MongoDB",
+      imgUrl: recipiy,
+      siteUrl: "web-production-066d.up.railway.app",
+    },
+    {
+      title: "Lost In Thailand project",
+      description:
+        "Travel information site based on my trip to Thailand. Main focus using JavaScript to manipulate elements. Learned how to implement Google Maps API and set up emails with EmailJS",
+      imgUrl: lothailand ,
+      siteUrl: "lost-in-thailand-ms2-project-production.up.railway.app",
     },
   ];
 
