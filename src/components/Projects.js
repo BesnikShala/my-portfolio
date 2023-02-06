@@ -1,10 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import colorSharp2 from "../assets/images/color-sharp2.png";
 import projectImg1 from "../assets/images/projectImg1.jpeg";
 import projectImg2 from "../assets/images/projectImg2.jpeg";
 import recipiy from '../assets/images/recipiy.jpeg';
 import lothailand from '../assets/images/lothailand.jpeg';
+import prestige from '../assets/images/prestige.jpeg';
 
 export const Projects = () => {
   const projects = [
@@ -38,6 +38,13 @@ export const Projects = () => {
         "Travel information site based on my trip to Thailand. Main focus using JavaScript to manipulate elements. Learned how to implement Google Maps API and set up emails with EmailJS",
       imgUrl: lothailand ,
       siteUrl: "lost-in-thailand-ms2-project-production.up.railway.app",
+    },
+    {
+      title: "Prestige Automotive",
+      description:
+        "Static site fully responsive using HTML, CSS and JavaScript. Learned how to structure style and manipulate elements using JavaScript and introduce google maps API",
+      imgUrl: prestige ,
+      siteUrl: "https://besnikshala.github.io/Milestone-project-1/",
     },
   ];
 
