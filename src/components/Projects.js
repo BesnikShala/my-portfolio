@@ -2,6 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projectImg1 from "../assets/images/projectImg1.jpeg";
 import projectImg2 from "../assets/images/projectImg2.jpeg";
+import exercise from '../assets/images/exercise.jpeg'
 import recipiy from '../assets/images/recipiy.jpeg';
 import lothailand from '../assets/images/lothailand.jpeg';
 import prestige from '../assets/images/prestige.jpeg';
@@ -21,6 +22,13 @@ export const Projects = () => {
         "My first real world project for a local construction company. Site built using Python and Django Framework",
       imgUrl: projectImg2,
       siteUrl: "https://www.founderproperty.co.uk/",
+    },
+    {
+      title: "Exercise App",
+      description:
+        "A fitness site for people to search exercises with Rapid-Api. Gif demonstrations and youtube videos via Youtube-Api",
+      imgUrl: exercise,
+      siteUrl: "https://exercises-api.netlify.app/",
     },
   ];
 
